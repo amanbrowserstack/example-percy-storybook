@@ -24,6 +24,6 @@ jobs:
       run: npm ci
       
     - name: Build Storybook
-      run: npm run test
+      run: npm run test -- --fail-on-changes
       env:
         PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
