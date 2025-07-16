@@ -27,3 +27,4 @@ jobs:
       run: npm run test -- --fail-on-changes
       env:
         PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        PERCY_FAIL_ON_CHANGES: true
