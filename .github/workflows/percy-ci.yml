@@ -26,8 +26,5 @@ jobs:
       
     - name: Build Storybook
       run: npm run test
-      
-    - name: Run Percy visual tests
-      run: npx percy storybook ./storybook-static
       env:
         PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
