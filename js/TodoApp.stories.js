@@ -9,20 +9,20 @@ export default {
 export const App = args => (
   <div>
     {/* Add external Google Font */}
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" 
-      rel="stylesheet" 
-    />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=BROKEN-FONT-URL&display=swap" 
+    rel="stylesheet" 
+  />
     
     {/* Add external CSS */}
-    <link 
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
-      rel="stylesheet" 
-    />
+  <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/BROKEN-CSS-FILE.css" 
+    rel="stylesheet" 
+  />
     
     <div style={{
-      fontFamily: '"Roboto", sans-serif',
-      backgroundImage: 'url(https://picsum.photos/1200/600?random=todoapp)',
+      fontFamily: '"BROKEN-FONT-URL", sans-serif',
+      backgroundImage: 'url(https://BROKEN-IMAGE-URL.com/404.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       minHeight: '100vh',
