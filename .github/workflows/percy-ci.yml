@@ -23,19 +23,10 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Run Percy tests
+    - name: Build Storybook
       run: npm run test
-      env:
-        PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-      continue-on-error: true
-        
-    - name: Check Percy build status
-      run: |
-        if [ -n "$PERCY_TOKEN" ]; then
-          echo "Percy token available - build should be created"
-        else
-          echo "Warning: Percy token not available on this PR"
-          exit 1
-        fi
+      
+    - name: Run Percy visual tests
+      run: npx percy storybook ./storybook-static
       env:
         PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
