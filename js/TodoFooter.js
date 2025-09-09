@@ -36,11 +36,6 @@ export default function TodoFooter({
         <button 
         style={{ 
           fontWeight: 'bold', 
-          backgroundColor: '#ff6b6b', 
-          color: 'white',
-          padding: '8px 16px',
-          border: 'none',
-          borderRadius: '4px'
         }} 
         className="clear-completed" 
         onClick={onClearCompleted}
