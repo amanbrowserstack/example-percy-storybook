@@ -34,6 +34,9 @@ export default function TodoFooter({
 
       {completedCount > 0 ? (
         <button 
+                style={{ 
+          fontWeight: 'bold', 
+        }} 
 
 
         className="clear-completed" 
