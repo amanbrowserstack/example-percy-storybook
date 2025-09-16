@@ -58,7 +58,10 @@ export default function TodoItem({
 
   return (
     <li className={classNames({ completed, editing })}>
-      <div className="view">
+      <div 
+        className="view"
+        style={{ backgroundColor: '#f8f9fa', padding: '10px', margin: '5px 0' }}
+    >
         <input
           type="checkbox"
           className="toggle"

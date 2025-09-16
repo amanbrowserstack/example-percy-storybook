@@ -33,11 +33,13 @@ export default function TodoFooter({
       </ul>
 
       {completedCount > 0 ? (
-        <button
-          className="clear-completed"
-          onClick={onClearCompleted}>
-          Clear completed
-        </button>
+        <button 
+
+        className="clear-completed" 
+        onClick={onClearCompleted}
+      >
+        Clear completed
+      </button>
       ) : null}
     </footer>
   );
